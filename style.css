@@ -45,6 +45,10 @@ input {
   border: 2px solid blue;
 }
 
+input:focus {
+  border: 10px solid black;
+}
+
 input:user-invalid {
   border: 2px solid red;
 }
