@@ -2,14 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  border: 0px solid red;
 }
 
 :root {
   --first-color: #596d48;
   --input-border: #e5e7eb;
   --background-color: #293141;
-  --form-background-color: #1c222f;
+  --form-background-color: #324162;
 }
 
 .flex-row {
@@ -41,6 +41,18 @@ img {
   object-fit: cover;
 }
 
+input {
+  border: 2px solid blue;
+}
+
+input:user-invalid {
+  border: 2px solid red;
+}
+
+input:user-valid {
+  border: 2px solid green;
+}
+
 .form-section-cont {
   height: 100%;
   width: 60%;
@@ -49,4 +61,6 @@ img {
 .form-cont {
   background-color: var(--form-background-color);
   width: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
 }

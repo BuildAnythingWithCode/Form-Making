@@ -15,13 +15,36 @@
         <em>now</em> to get started.
       </h2>
       <h2>You <em>know</em> you want to.</h2>
-      <div class="form-cont">
+      <form action="#" method="post" class="form-cont flex-row">
         <div class="form-cont-left flex-column">
           <h2>Let's do this!</h2>
+          <label for="first_name">FIRST NAME</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="Thor"
+          />
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" />
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" minlength="8" />
         </div>
-        <div class="form-cont-right flex-column"></div>
-      </div>
-      <button>Create Account</button>
+        <div class="form-cont-right flex-column">
+          <label for="last_name">LAST NAME</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Odinson"
+          />
+          <label for="phone_number">PHONE NUMBER</label>
+          <input type="number" id="phone_number" name="phone_number" />
+          <label for="password">CONFIRM PASSWORD</label>
+          <input type="password" id="password" name="password" minlength="8" />
+        </div>
+      </form>
+      <button type="submit">Create Account</button>
       <p>Already have an account? <a href="#">Log in</a></p>
     </div>
 
