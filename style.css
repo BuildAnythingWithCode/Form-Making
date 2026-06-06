@@ -2,11 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 :root {
   --first-color: #596d48;
   --input-border: #e5e7eb;
+  --background-color: #293141;
+  --form-background-color: #1c222f;
 }
 
 .flex-row {
@@ -14,6 +17,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 .flex-column {
@@ -21,15 +25,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 
 body {
-  background-color: rgb(77, 76, 112);
+  background-color: var(--background-color);
   height: 100vh;
   width: 100vw;
 }
 
 img {
   height: 100%;
+  width: 40%;
+  object-fit: cover;
+}
+
+.form-section-cont {
+  height: 100%;
+  width: 60%;
+}
+
+.form-cont {
+  background-color: var(--form-background-color);
+  width: 100%;
 }
